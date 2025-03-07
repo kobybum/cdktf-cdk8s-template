@@ -16,6 +16,12 @@ I used a similar structure with great success in several companies, and I recomm
 - `cdktf` - to provision the infrastructure (vpc, eks cluster, etc)
 - `cdk8s` - to deploy the app (backend services, ingress, etc)
 
+Using a pnpm workspace allows you to expand this repo -
+
+Either to a fully fledged monorepo (in which case you might want to consider Turborepo / NX)
+
+Or just extend IAC repo with `lambdas/` and `actions/` that you use as sub projects to build your lambdas and github actions, and deploy through IAC.
+
 ## Multiple App support for cdktf
 
 [cdktf.json](./cdk/tf/cdktf.json) requires an 'app' entrypoint.
