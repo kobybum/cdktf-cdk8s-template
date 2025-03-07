@@ -1,0 +1,28 @@
+{
+  "name": "tf",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "get": "cdktf get",
+    "list": "cdktf list",
+    "build": "tsc",
+    "synth": "cdktf synth",
+    "compile": "tsc --pretty",
+    "watch": "tsc -w",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "engines": {
+    "node": ">=20.0"
+  },
+  "dependencies": {
+    "@cdktf/provider-aws": "^19.55.0",
+    "@repo/config": "workspace:*",
+    "cdktf": "^0.20.11",
+    "constructs": "^10.3.0",
+    "zod": "^3.22.5"
+  },
+  "devDependencies": {
+    "@cdklib/config": "^0.4.0"
+  }
+}

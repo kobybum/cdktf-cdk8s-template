@@ -1,0 +1,10 @@
+{
+  "language": "typescript",
+  "app": "npx ts-node app/$CDKTF_ENV.ts",
+  "projectId": "81cd3b60-31c0-4206-a7ac-83357b23fca9",
+  "sendCrashReports": "false",
+  "terraformProviders": [],
+  "output": "dist",
+  "terraformModules": [],
+  "context": {}
+}

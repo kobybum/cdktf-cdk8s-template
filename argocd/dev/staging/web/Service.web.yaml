@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: web
+spec:
+  externalIPs: []
+  ports:
+    - port: 80
+      targetPort: 80
+  selector:
+    cdk8s.io/metadata.addr: web-c806bafc
+  type: ClusterIP

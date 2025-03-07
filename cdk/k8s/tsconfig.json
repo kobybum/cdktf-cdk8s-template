@@ -1,0 +1,13 @@
+{
+  "extends": "../../tools/tsconfig/cdk.json",
+  "compilerOptions": {
+    "paths": {
+      "@imports/*": ["./.gen/*"],
+      "@/*": ["./src/*"]
+    },
+    "noImplicitOverride": false,
+    "baseUrl": "."
+  },
+  "include": ["src/**/*.ts", "app/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

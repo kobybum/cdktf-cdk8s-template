@@ -1,0 +1,14 @@
+{
+  "extends": "../../tools/tsconfig/cdk.json",
+  "compilerOptions": {
+    "paths": {
+      "@provider/*": ["./.gen/providers/*"],
+      "@module/*": ["./.gen/modules/*"],
+      "@/*": ["./src/*"]
+    },
+    "noImplicitOverride": false,
+    "baseUrl": "."
+  },
+  "include": ["src/**/*.ts", "app/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
